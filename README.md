@@ -1,2 +1,2 @@
 # Oceanic Crisis
-# This slide show is about
+This slide show is about
