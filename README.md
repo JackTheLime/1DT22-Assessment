@@ -1,2 +1,2 @@
 # Oceanic Crisis
-##* this is about my project
+*this is about my project*
