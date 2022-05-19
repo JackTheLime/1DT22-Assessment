@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.myDiv {
+    background-color: blanchedalmond;
+    border: 2em solid orange;
+    width: 50%;
+}
