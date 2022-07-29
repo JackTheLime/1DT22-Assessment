@@ -1,20 +1,13 @@
 /*----------IMPORTS----------*/
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Amiko&family=Play&family=Ropa+Sans&family=Scada&display=swap');
-@import url(//db.onlinewebfonts.com/c/596b9b0742c4fb004a2adcaf9861a128?family=WWF);
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=News+Cycle&family=Open+Sans&display=swap');
 font-family: 'Play', sans-serif;
 font-family: 'Ropa Sans', sans-serif;
 font-family: 'Scada', sans-serif;
 font-family: 'Amiko', sans-serif;
 
-@font-face {font-family: "WWF Regular";
-  src: url("596b9b0742c4fb004a2adcaf9861a128.eot"); /* IE9*/
-  src: url("596b9b0742c4fb004a2adcaf9861a128.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("596b9b0742c4fb004a2adcaf9861a128.woff2") format("woff2"), /* chrome、firefox */
-  url("596b9b0742c4fb004a2adcaf9861a128.woff") format("woff"), /* chrome、firefox */
-  url("596b9b0742c4fb004a2adcaf9861a128.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("596b9b0742c4fb004a2adcaf9861a128.svg#WWF Regular") format("svg"); /* iOS 4.1- */
-}
+
 
 body { 
   margin: 0px; 
@@ -35,7 +28,7 @@ body {
   float: left;
   display: block;
   color: #f2f2f2;
-  text-align: left;
+  text-align:left;
   padding: 19px 20px;
   text-decoration: none;
   font-size: 17px;
@@ -255,7 +248,7 @@ font-family: 'Akimo', sans-serif;
   border-radius: 20px;
   background-size:300px 150px;
   background-color: #ddd;
-  background-image: url("../images/Homepage/wavebackground.png");
+  background-image: url("../images/Icons/wavefiller.png");
   background-repeat: repeat-x;
   background-position: 0 -50%;
   transition: 1.2s ease;
@@ -288,23 +281,45 @@ img .logo {
  /*------------------------------------------ START OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 .about {
   top:5px;
-  height:350px;
+  height:450px;
   width:100%;
-  padding: 10px;
-  border:  solid rgb(236, 0, 0);
+  padding: 20px;
   color:black;
-  text-align: center;
-  background-position: center;
+  text-align: left;
+  background-image: url("../images/Homepage/idek.png");
+  background-size: 300%;
+  background-position:center;
 }
 
 .about h1 {
   position: relative;
-  font-family:"WWF Regular" !important;
-  top: 10px;
-  width: 50%;
-  
+  top:40px;
+  left:40px;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  width: 20%;
+  text-decoration: none;
+  border-bottom:#00a8db solid 4px;
 }
 
+.about p{
+  position: relative;
+  width: 35%;
+  top:40px;
+  left:40px;
+  font-family: 'Play', sans-serif;
+  z-index: 2;
+}
+.about h2{
+  position: ;
+  width: 35%;
+  top:40px;
+  text-align: right;
+  font-family: 'BenchNine', sans-serif;
+}
+.about table {
+  border: #000000 1px solid;
+}
 
 /*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 .carousel .carousel-item {
