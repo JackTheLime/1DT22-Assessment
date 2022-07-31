@@ -6,3 +6,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+$('.carousel').carousel({
+  interval: 2
+})

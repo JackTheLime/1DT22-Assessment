@@ -411,11 +411,11 @@ img .logo {
   .purpose1 h1{
     font-size:28px;
     width:70%;
-    z-index: 1000;
+    font-weight: 700;
   }
   .purpose2 h1{
     font-size:30px;
-    z-index: 1000;
+    font-weight: 700;
   }
   .about p {
     width:100%;
@@ -423,15 +423,78 @@ img .logo {
   }
 }
 /*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
+/*------------------------------------------ START OF "CAROUSEL" CSS --------------------------------------------*/
 .carousel .carousel-item {
-  height: 600px;
+  height: 650px;
 }
-
+.carousel-item {
+  background: #000000;
+}
 .carousel-item img {
     position: absolute;
     object-fit:cover;
+    opacity: 50%;
     top: 0;
     left: 0;
     min-height: 600px;
 } 
+.carousel-caption {
+  font-size: 50px;
+  font-family: 'BenchNine', sans-serif;
+  padding: 0px;
+}
+.carousel-caption h1{
+  font-size: 50px;
+  font-family: 'BenchNine', sans-serif;
+  padding: 0px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.carousel-caption a{
+  font-size: 50px;
+  font-family: 'BenchNine', sans-serif;
+  padding: 0px;
+  color: white;
+}
+.carousel-caption a:hover{
+  font-size: 50px;
+  font-family: 'BenchNine', sans-serif;
+  padding: 0px;
+  color: rgb(0, 158, 206);
+}
+.carousel-caption p{
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  padding: 0px;
+}
 
+@media screen and (max-width:855px){
+  .carousel-caption h1{
+    font-size: 40px;
+  }
+  .carousel-caption p{
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+  }
+}
+/*------------------------------------------ END OF "CAROUSEL" CSS --------------------------------------------*/
+.information1 {
+  height:450px;
+  width:100%;
+  padding: 35px;
+  color:black;
+  text-align: left;
+  background-image: url("../images/Homepage/idek.png");
+  background-size: 300%;
+  background-position:left;
+  display: flex;
+}
+.information1 h1{
+    position: relative;
+    height: 50px;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 700;
+    width: 15%;
+    text-decoration: none;
+    border-bottom:#00a8db solid 4px;
+  }
