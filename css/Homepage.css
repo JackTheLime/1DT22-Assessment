@@ -280,50 +280,151 @@ img .logo {
 
  /*------------------------------------------ START OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 .about {
-  top:5px;
   height:450px;
   width:100%;
-  padding: 20px;
+  padding: 0px;
   color:black;
   text-align: left;
   background-image: url("../images/Homepage/idek.png");
   background-size: 300%;
   background-position:center;
+  display: flex;
 }
 
-.about h1 {
+.purpose1 {
   position: relative;
-  top:40px;
-  left:40px;
+  height:450px;
+  color:black;
+  text-align: left;
+  width: 50%;
+  padding: 40px;
+}
+
+.purpose2 {
+  position: relative;
+  height:450px;
+  color:black;
+  width: 50%;
+  padding: 40px;
+  z-index: 1001;
+}
+
+.purpose1 h1 {
+  position: relative;
   font-family: 'BenchNine', sans-serif;
   font-weight: 700;
-  width: 20%;
+  width: 35%;
   text-decoration: none;
   border-bottom:#00a8db solid 4px;
+}
+.purpose2 h1 {
+  position: relative;
+  padding: 20px;
+  font-weight: 700;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 60px;
+  text-align: right;
+  width: 100%;
+  border-bottom:#00b6ee solid 2px;
 }
 
 .about p{
   position: relative;
-  width: 35%;
-  top:40px;
-  left:40px;
   font-family: 'Play', sans-serif;
+  width: 80%;
+  font-size: 19px;
   z-index: 2;
 }
-.about h2{
-  position: ;
-  width: 35%;
-  top:40px;
-  text-align: right;
-  font-family: 'BenchNine', sans-serif;
-}
-.about table {
-  border: #000000 1px solid;
+@media screen and (max-width:1350px){
+  .about p {
+    width:100%;
+    font-size: 18px;
+  }
+  .purpose2 h1{
+    font-size:50px;
+    z-index: 1000;
+  }
 }
 
+@media screen and (max-width:1320px){
+  .purpose1 {
+    padding: 30px;
+    width: 100%;
+    height:400px;
+  }
+  .purpose2 {
+    padding: 40px;
+    width: 100%;
+    height:400px;
+  }
+  .purpose2 h1{
+    font-size:38px;
+    z-index: 1000;
+  }
+  .about p {
+    width:100%;
+    font-size: 16.5px;
+  }
+}
+
+@media screen and (max-width:855px){
+  .about{
+    display: block;
+    height:800px;
+  }
+  .purpose1 {
+    padding: 20px;
+    width: 100%;
+  }
+  .purpose2 {
+    padding: 20px;
+    width: 100%;
+  }
+  .purpose1 h1{
+    font-size:32px;
+    width:70%;
+    z-index: 1000;
+  }
+  .purpose2 h1{
+    font-size:40px;
+    z-index: 1000;
+  }
+  .about p {
+    width:100%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:470px){
+  .about{
+    display: block;
+    height:800px;
+  }
+  .purpose1 {
+    padding: 20px;
+    width: 100%;
+  }
+  .purpose2 {
+    padding: 30px;
+    width: 100%;
+  }
+  .purpose1 h1{
+    font-size:28px;
+    width:70%;
+    z-index: 1000;
+  }
+  .purpose2 h1{
+    font-size:30px;
+    z-index: 1000;
+  }
+  .about p {
+    width:100%;
+    font-size: 15px;
+  }
+}
 /*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 .carousel .carousel-item {
-  height: 700px;
+  height: 600px;
 }
 
 .carousel-item img {
