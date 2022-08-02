@@ -20,9 +20,10 @@ body {
 .topnav {
   background-color: #027994;
   overflow: hidden;
-  
 }
-
+.topnav i {
+  font-size: 35px;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -196,11 +197,6 @@ a.using {
       width: 100%;
       left: 0;
     }
-
-    i {
-      font-size: 35px;
-     
-    }
     
     img .logo {
       width: 40px;
@@ -237,7 +233,7 @@ a.using {
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
-font-family: 'Akimo', sans-serif;
+  font-family: 'Akimo', sans-serif;
 }
 
 .hero-text button{
@@ -436,7 +432,7 @@ img .logo {
     opacity: 50%;
     top: 0;
     left: 0;
-    min-height: 600px;
+    min-height: 700px;
 } 
 .carousel-caption {
   font-size: 50px;
@@ -479,22 +475,145 @@ img .logo {
 }
 /*------------------------------------------ END OF "CAROUSEL" CSS --------------------------------------------*/
 .information1 {
-  height:450px;
+  height:780px;
   width:100%;
-  padding: 35px;
+  padding: 20px;
   color:black;
   text-align: left;
   background-image: url("../images/Homepage/idek.png");
   background-size: 300%;
   background-position:left;
   display: flex;
+  justify-content: space-evenly;
 }
-.information1 h1{
+.news-header h1{
     position: relative;
     height: 50px;
     font-family: 'BenchNine', sans-serif;
     font-weight: 700;
-    width: 15%;
+    width: 100%;
     text-decoration: none;
     border-bottom:#00a8db solid 4px;
   }
+  .news-header {
+    width: 30%;
+    height: 70px;
+    margin-top: 30px;
+    font-family: 'BenchNine', sans-serif;
+    position: absolute;
+    text-align: center;
+  }
+  .article {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    top: 100px;
+    max-height: 600px;
+    border: black 2px solid;
+  }
+  .article-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .article-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+  }
+  .article-body h4{
+   padding: 10px 0px 0px 0px;
+   font-size: 20px;
+  }
+  .article-body p{
+    padding: 10px 0px 0px 0px;
+  }
+  
+  .tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+  }
+  .tag-red {
+    background-color: #b60000;
+  }
+  .tag-purple {
+    background-color: #7a00cc;
+  }
+  .tag-pink {
+    background-color: #cd5b9f;
+  }
+  .tag-blue {
+    background-color: #0059ff;
+  }
+  
+  .article-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+  }
+  .author{
+    display: flex;
+    margin-top: auto;
+  }
+  
+  .author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .author-info h5 {
+    margin: 0;
+  }
+  .author-info h6 {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+    padding: 10px 0px 0px 0px;
+  }
+  .author-info h6:hover {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(0, 67, 211);
+    padding: 10px 0px 0px 0px;
+  }
+  .author-info i {
+    margin: 0;
+    font-size: 16px;
+  }
+  .author-info small {
+    color: #545d7a;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .information1 {
+      height:2100px;
+      width:100%;
+      padding:20px;
+      display: block;
+      justify-content:space-evenly;
+    }
+    .article {
+      width: 100%;
+      margin: 0;
+      margin-top: 20px;
+    }
+    .news-header {
+      width: 95.5%;
+  }
+section i{
+height: 20px;
+}
+ 
+ 
