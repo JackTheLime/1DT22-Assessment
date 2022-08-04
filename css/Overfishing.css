@@ -20,6 +20,7 @@ body {
 .topnav {
   background-color: #027994;
   overflow: hidden;
+  position: sticky;
 }
 .topnav i {
   font-size: 35px;
@@ -34,7 +35,6 @@ body {
   text-decoration: none;
   font-size: 17px;
   transition: 0.7s ;
-  
 }
 .topnav a.using {
   float: right;
@@ -216,7 +216,7 @@ a.using {
 
   /* This is the hero image CSS code */
   .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Homepage/ocean_hero_image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Overfishing_page/overfishing_hero.jpg");
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -224,6 +224,7 @@ a.using {
   overflow: hidden;
   background-repeat: no-repeat;
   height:75vh;
+  
 }
 
 .hero-text {
@@ -278,7 +279,7 @@ img .logo {
 .about {
   height:450px;
   width:100%;
-  padding: 0px;
+  padding: 100px 100px 20px 100px;
   color:black;
   text-align: left;
   background-image: url("../images/Homepage/idek.png");
@@ -289,135 +290,37 @@ img .logo {
 
 .purpose1 {
   position: relative;
-  height:450px;
+  height:auto;
+  width: auto;
   color:black;
   text-align: left;
-  width: 50%;
-  padding: 40px;
-}
-
-.purpose2 {
-  position: relative;
-  height:450px;
-  color:black;
-  width: 50%;
-  padding: 40px;
-  z-index: 1001;
+  padding: 0px;
 }
 
 .purpose1 h1 {
   position: relative;
   font-family: 'BenchNine', sans-serif;
   font-weight: 700;
-  width: 35%;
+  width: 100%;
   text-decoration: none;
   border-bottom:#00a8db solid 4px;
-}
-.purpose2 h1 {
-  position: relative;
-  padding: 20px;
-  font-weight: 700;
-  font-family: 'BenchNine', sans-serif;
-  font-size: 60px;
-  text-align: right;
-  width: 100%;
-  border-bottom:#00b6ee solid 2px;
 }
 
 .about p{
   position: relative;
   font-family: 'Play', sans-serif;
-  width: 80%;
+  width: 100%;
   font-size: 19px;
   z-index: 2;
 }
-@media screen and (max-width:1350px){
-  .about p {
-    width:100%;
-    font-size: 18px;
-  }
-  .purpose2 h1{
-    font-size:50px;
-    z-index: 1000;
-  }
+
+.header-holder {
+  width: 40%;
+  position:relative;
+  text-align: center;
+  left: 30%;
 }
 
-@media screen and (max-width:1320px){
-  .purpose1 {
-    padding: 30px;
-    width: 100%;
-    height:400px;
-  }
-  .purpose2 {
-    padding: 40px;
-    width: 100%;
-    height:400px;
-  }
-  .purpose2 h1{
-    font-size:38px;
-    z-index: 1000;
-  }
-  .about p {
-    width:100%;
-    font-size: 16.5px;
-  }
-}
-
-@media screen and (max-width:855px){
-  .about{
-    display: block;
-    height:800px;
-  }
-  .purpose1 {
-    padding: 20px;
-    width: 100%;
-  }
-  .purpose2 {
-    padding: 20px;
-    width: 100%;
-  }
-  .purpose1 h1{
-    font-size:32px;
-    width:70%;
-    z-index: 1000;
-  }
-  .purpose2 h1{
-    font-size:40px;
-    z-index: 1000;
-  }
-  .about p {
-    width:100%;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width:470px){
-  .about{
-    display: block;
-    height:800px;
-  }
-  .purpose1 {
-    padding: 20px;
-    width: 100%;
-  }
-  .purpose2 {
-    padding: 30px;
-    width: 100%;
-  }
-  .purpose1 h1{
-    font-size:28px;
-    width:70%;
-    font-weight: 700;
-  }
-  .purpose2 h1{
-    font-size:30px;
-    font-weight: 700;
-  }
-  .about p {
-    width:100%;
-    font-size: 15px;
-  }
-}
 /*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 /*------------------------------------------ START OF "CAROUSEL" CSS --------------------------------------------*/
 .carousel .carousel-item {
@@ -615,3 +518,8 @@ img .logo {
 section i{
 height: 20px;
 }
+
+/*-----------footer css-------------------*/
+
+
+ 
