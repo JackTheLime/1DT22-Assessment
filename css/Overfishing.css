@@ -1,7 +1,7 @@
 /*----------IMPORTS----------*/
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Amiko&family=Play&family=Ropa+Sans&family=Scada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=News+Cycle&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=News+Cycle&family=Open+Sans&display=swap&family=Poppins:wght@500&display=swap');
 font-family: 'Play', sans-serif;
 font-family: 'Ropa Sans', sans-serif;
 font-family: 'Scada', sans-serif;
@@ -20,7 +20,6 @@ body {
 .topnav {
   background-color: #027994;
   overflow: hidden;
-  position: sticky;
 }
 .topnav i {
   font-size: 35px;
@@ -35,6 +34,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   transition: 0.7s ;
+  
 }
 .topnav a.using {
   float: right;
@@ -202,13 +202,6 @@ a.using {
       width: 40px;
       height: 40px;
     }
-    .cf:after, .cf:before {
-      content: "";
-      display: table;
-    }
-    .cf:after {
-      clear: both;
-    }
     /*-------------------------------------------------- END OF NAVBAR CSS -------------------------------------------------*/
 
 
@@ -216,14 +209,14 @@ a.using {
 
   /* This is the hero image CSS code */
   .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Overfishing_page/overfishing_hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Overfishing_page/overfishing.jpg");
   height: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
-  height:75vh;
+  height:90vh;
   
 }
 
@@ -255,13 +248,15 @@ a.using {
   background-position: center;
 }
 .hero-text h1{
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero-text p{
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 600px) {
@@ -277,15 +272,31 @@ img .logo {
 
  /*------------------------------------------ START OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 .about {
-  height:450px;
+  height:;
   width:100%;
-  padding: 100px 100px 20px 100px;
+  padding: 0px 250px 40px 250px;
   color:black;
   text-align: left;
   background-image: url("../images/Homepage/idek.png");
   background-size: 300%;
-  background-position:center;
+  background-position:right;
   display: flex;
+}
+.header-holder {
+  width: 40%;
+  margin-top: 40px;
+  position:relative;
+  text-align: center;
+  left: 30%;
+}
+
+.purpose1 p{
+  position: relative;
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  font-size: 19px;
+  z-index: 2;
+  margin-top: 30px;
 }
 
 .purpose1 {
@@ -294,7 +305,6 @@ img .logo {
   width: auto;
   color:black;
   text-align: left;
-  padding: 0px;
 }
 
 .purpose1 h1 {
@@ -306,19 +316,17 @@ img .logo {
   border-bottom:#00a8db solid 4px;
 }
 
-.about p{
+.purpose1 img {
   position: relative;
-  font-family: 'Play', sans-serif;
+  height: 500px;
   width: 100%;
-  font-size: 19px;
-  z-index: 2;
 }
 
-.header-holder {
-  width: 40%;
-  position:relative;
-  text-align: center;
-  left: 30%;
+.image_and_information {
+  background-color: rgb(238, 215, 0);
+  height: 450px;
+  position: relative;
+  width: 100%;
 }
 
 /*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/

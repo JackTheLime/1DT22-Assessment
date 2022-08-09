@@ -202,13 +202,6 @@ a.using {
       width: 40px;
       height: 40px;
     }
-    .cf:after, .cf:before {
-      content: "";
-      display: table;
-    }
-    .cf:after {
-      clear: both;
-    }
     /*-------------------------------------------------- END OF NAVBAR CSS -------------------------------------------------*/
 
 
