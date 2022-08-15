@@ -22,7 +22,8 @@ body {
   overflow: hidden;
 }
 .topnav i {
-  font-size: 35px;
+  font-size: 30px;
+  padding:0px 5px 0px 0px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -30,9 +31,9 @@ body {
   display: block;
   color: #f2f2f2;
   text-align:left;
-  padding: 19px 20px;
+  padding: 24px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   transition: 0.7s ;
   
 }
@@ -71,7 +72,7 @@ a.using {
   border: none;
   outline: none;
   color: white;
-  padding: 19px 20px;
+  padding: 24px 20px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -280,7 +281,7 @@ img .logo {
   background-image: url("../images/Homepage/idek.png");
   background-size: 300%;
   background-position:right;
-  display: flex;
+  display: block;
 }
 .header-holder {
   width: 40%;
@@ -305,6 +306,7 @@ img .logo {
   width: auto;
   color:black;
   text-align: left;
+  display: ;
 }
 
 .purpose1 h1 {
@@ -318,7 +320,7 @@ img .logo {
 
 .purpose1 img {
   position: relative;
-  height: 500px;
+  height: 100%;
   width: 100%;
 }
 
@@ -328,6 +330,8 @@ img .logo {
   position: relative;
   width: 100%;
 }
+
+
 
 /*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 /*------------------------------------------ START OF "CAROUSEL" CSS --------------------------------------------*/
