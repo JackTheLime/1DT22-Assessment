@@ -2,11 +2,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Amiko&family=Play&family=Ropa+Sans&family=Scada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=News+Cycle&family=Open+Sans&display=swap&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 font-family: 'Play', sans-serif;
 font-family: 'Ropa Sans', sans-serif;
 font-family: 'Scada', sans-serif;
 font-family: 'Amiko', sans-serif;
-
+border-left:#c50000 solid 4px;
 
 
 body { 
@@ -22,8 +23,8 @@ body {
   overflow: hidden;
 }
 .topnav i {
-  font-size: 30px;
-  padding:0px 5px 0px 0px;
+  font-size: 35px;
+  padding:0px 7px 0px 0px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -31,10 +32,11 @@ body {
   display: block;
   color: #f2f2f2;
   text-align:left;
-  padding: 24px 20px;
+  padding: 19px 20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.7s ;
+  font-family: 'Exo 2', sans-serif;
   
 }
 .topnav a.using {
@@ -44,7 +46,7 @@ body {
   text-align: center;
   padding: 14.2px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 23px;
   position: relative;
 }
 
@@ -68,15 +70,16 @@ a.using {
 
 /* Style the dropdown button to fit inside the topnav */
 .without-bootstrap-dropdown .without-bootstrap-dropbtn {
-  font-size: 17px;
+  font-size: 25px;
   border: none;
   outline: none;
   color: white;
-  padding: 24px 20px;
+  padding: 19px 20px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
   transition: 0.7s;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -86,6 +89,7 @@ a.using {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   display: none;
   z-index:1;
+
   
 }
 
@@ -99,7 +103,13 @@ a.using {
   text-decoration: none;
   display:block;
   text-align: left;
-  
+  font-size: 20px;
+  font-weight:bolder;
+}
+
+.without-bootstrap-dropdown-content i {
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .without-bootstrap-dropdown-content a.curved_edge {
@@ -141,7 +151,7 @@ a.using {
   
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .topnav a:not(:first-child), .without-bootstrap-dropdown .without-bootstrap-dropbtn {
     display: none;
   }
@@ -155,7 +165,7 @@ a.using {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -264,6 +274,9 @@ a.using {
   .hero-image {
     height:60vh;
   }
+  .hero-text h1{
+    font-size: 50px;
+  }
 }
 
 img .logo {
@@ -273,25 +286,25 @@ img .logo {
 
  /*------------------------------------------ START OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 .about {
-  height:;
   width:100%;
   padding: 0px 250px 40px 250px;
   color:black;
   text-align: left;
   background-image: url("../images/Homepage/idek.png");
   background-size: 300%;
-  background-position:right;
+  background-position:;
   display: block;
+  border: #000000 0.1px solid;
 }
 .header-holder {
   width: 40%;
-  margin-top: 40px;
+  margin-top: 30px;
   position:relative;
   text-align: center;
   left: 30%;
 }
 
-.purpose1 p{
+.article p{
   position: relative;
   font-family: 'Play', sans-serif;
   width: 100%;
@@ -300,16 +313,15 @@ img .logo {
   margin-top: 30px;
 }
 
-.purpose1 {
+.article {
   position: relative;
   height:auto;
   width: auto;
   color:black;
   text-align: left;
-  display: ;
 }
 
-.purpose1 h1 {
+.article h1 {
   position: relative;
   font-family: 'BenchNine', sans-serif;
   font-weight: 700;
@@ -318,220 +330,380 @@ img .logo {
   border-bottom:#00a8db solid 4px;
 }
 
-.purpose1 img {
+.article img {
   position: relative;
   height: 100%;
   width: 100%;
+  border-radius: 20px;
 }
 
-.image_and_information {
-  background-color: rgb(238, 215, 0);
-  height: 450px;
-  position: relative;
-  width: 100%;
+@media screen and (max-width:990px){
+  .about { 
+    padding: 0px 150px 40px 150px;
+  }
+  .header-holder {
+    width: 60%;
+    margin-top: 40px;
+    position:relative;
+    text-align: center;
+    left: 15%;
+  }
 }
 
-
+@media screen and (max-width:750px){
+  .about { 
+    padding: 0px 90px 40px 90px;
+    background-size: 500%;
+  }
+  .article p{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:450px){
+  .about { 
+    padding: 0px 60px 40px 60px;
+  }
+  .article p{
+    font-size: 15px;
+  }
+  .header-holder {
+    width: 80%;
+    left: 5%;
+  }
+}
 
 /*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 /*------------------------------------------ START OF "CAROUSEL" CSS --------------------------------------------*/
-.carousel .carousel-item {
-  height: 650px;
-}
-.carousel-item {
-  background: #000000;
-}
-.carousel-item img {
-    position: absolute;
-    object-fit:cover;
-    opacity: 50%;
-    top: 0;
-    left: 0;
-    min-height: 700px;
-} 
-.carousel-caption {
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-}
-.carousel-caption h1{
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-  font-weight: 700;
-  text-decoration: none;
-}
-.carousel-caption a{
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-  color: white;
-}
-.carousel-caption a:hover{
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-  color: rgb(0, 158, 206);
-}
-.carousel-caption p{
-  font-family: 'Play', sans-serif;
-  font-size: 20px;
-  padding: 0px;
+.about2 {
+  position: relative;
+  width:100%;
+  padding: 30px;
+  height: 400px;
+  color:black;
+  text-align: center;
+  background-color: #004656;
+  background-position: left;
+  background-size: 230%;
+  background-image: url("../images/Overfishing_page/article_background_2.png");
+  display: block;
+  border: #000000 0.1px solid;
+  z-index: 5;
 }
 
-@media screen and (max-width:855px){
-  .carousel-caption h1{
-    font-size: 40px;
-  }
-  .carousel-caption p{
-    font-family: 'Play', sans-serif;
-    font-size: 16px;
-  }
+.header-holder2 {
+  width: 50%;
+  margin-top: 30px;
+  position:relative;
+  left: 25%;
+  display: flex;
 }
-/*------------------------------------------ END OF "CAROUSEL" CSS --------------------------------------------*/
-.information1 {
-  height:780px;
-  width:100%;
-  padding: 20px;
+
+.about2 h1 {
+  position: relative;
+  color: #ffffff;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  text-decoration: none;
+  border-bottom:#00a8db solid 4px;
+  margin-top: -20px;
+}
+
+.article2 {
+  position: relative;
+  height:auto;
+  width: 100%;
   color:black;
   text-align: left;
-  background-image: url("../images/Homepage/idek.png");
-  background-size: 300%;
-  background-position:left;
-  display: flex;
+  display:flex;
+  margin-top: 20px;
   justify-content: space-evenly;
 }
-.news-header h1{
-    position: relative;
-    height: 50px;
-    font-family: 'BenchNine', sans-serif;
-    font-weight: 700;
-    width: 100%;
-    text-decoration: none;
-    border-bottom:#00a8db solid 4px;
-  }
-  .news-header {
-    width: 30%;
-    height: 70px;
-    margin-top: 30px;
-    font-family: 'BenchNine', sans-serif;
-    position: absolute;
-    text-align: center;
-  }
-  .article {
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 300px;
-    position: relative;
-    top: 100px;
-    max-height: 600px;
-    border: black 2px solid;
-  }
-  .article-header img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  .article-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: 250px;
-  }
-  .article-body h4{
-   padding: 10px 0px 0px 0px;
-   font-size: 20px;
-  }
-  .article-body p{
-    padding: 10px 0px 0px 0px;
-  }
-  
-  .tag {
-    background: #cccccc;
-    border-radius: 50px;
-    font-size: 12px;
-    margin: 0;
-    color: #fff;
-    padding: 2px 10px;
-    text-transform: uppercase;
-  }
-  .tag-red {
-    background-color: #b60000;
-  }
-  .tag-purple {
-    background-color: #7a00cc;
-  }
-  .tag-pink {
-    background-color: #cd5b9f;
-  }
-  .tag-blue {
-    background-color: #0059ff;
-  }
-  
-  .article-body p {
-    font-size: 13px;
-    margin: 0 0 40px;
-  }
-  .author{
-    display: flex;
-    margin-top: auto;
-  }
-  
-  .author img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  .author-info h5 {
-    margin: 0;
-  }
-  .author-info h6 {
-    margin: 0;
-    font-size: 14px;
-    color: black;
-    padding: 10px 0px 0px 0px;
-  }
-  .author-info h6:hover {
-    margin: 0;
-    font-size: 14px;
-    color: rgb(0, 67, 211);
-    padding: 10px 0px 0px 0px;
-  }
-  .author-info i {
-    margin: 0;
-    font-size: 16px;
-  }
-  .author-info small {
-    color: #545d7a;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .information1 {
-      height:2100px;
-      width:100%;
-      padding:20px;
-      display: block;
-      justify-content:space-evenly;
-    }
-    .article {
-      width: 100%;
-      margin: 0;
-      margin-top: 20px;
-    }
-    .news-header {
-      width: 95.5%;
-  }
-section i{
-height: 20px;
+
+.article2 p{
+  font-family: 'Play', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #000000;
 }
 
-/*-----------footer css-------------------*/
+.article2 p:hover{
+  color: #00a8db;
+  text-decoration-color: #00a8db;
+}
 
+.polaroid-responsive-box {
+  width: 50%;
+  height: auto;
+  justify-content: space-around;
+  display: flex;
+}
 
- 
+.polaroid img{
+  height: 150px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px
+}
+
+.polaroid {
+  background-color: rgb(227, 227, 227);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border: #000000 4px solid;
+  border-radius: 20px 20px 20px 20px;
+  max-width: 230px;
+}
+
+.polaroidcontainer {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: -20px -20px 0px 0px;
+}
+
+@media screen and (max-width:1000px){
+  .polaroid { 
+    margin: 2%;
+    max-width: 180px;
+  }
+  .article2 {
+    height:auto;
+  }
+  .about2 h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .polaroid-responsive-box {
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .article2 {
+    height:auto;
+    display:inline-block;
+  }
+  .article2 p {
+    font-size: 15px;
+  }
+  .about2 {
+    height:auto;
+    display:inline-block;
+  }
+  .polaroid {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    max-width: 220px;
+    width: 100%;
+  }
+  .header-holder2 {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width:390px){
+
+  .polaroid-responsive-box {
+    width: 100%;
+    display:block;
+    justify-content: center;
+    padding: px;
+  }
+  .about2 h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .polaroid {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    max-width: 15000px;
+    width: 100%;
+  }
+  .polaroidcontainer {
+    width: 100%;
+  }
+  .polaroid img {
+    height: 200px;
+  }
+}
+
+/*----------------------------------------------------------------------------------------*/
+.about3 {
+  width:100%;
+  padding: 0px 250px 40px 250px;
+  background-color:rgb(21, 0, 0);
+  text-align: left;
+  background-image: url("../images/Overfishing_page/article_background_5.png");
+  background-size: 250%;
+  background-position:right;
+  display: block;
+  border: #000000 0.1px solid;
+}
+.header-holder3 {
+  width: 40%;
+  margin-top: 30px;
+  position:relative;
+  text-align: center;
+  left: 30%;
+}
+
+.article3 p{
+  position: relative;
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  font-size: 19px;
+  z-index: 2;
+  margin-top: 30px;
+  color: #ffffff;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.article3 {
+  position: relative;
+  height:auto;
+  width: auto;
+  color:black;
+  text-align: left;
+}
+
+.article3 h1 {
+  position: relative;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom:#c50000 solid 4px;
+}
+
+.article3 img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:990px){
+  .about3 { 
+    padding: 0px 150px 40px 150px;
+  }
+  .header-holder3 {
+    width: 60%;
+    margin-top: 40px;
+    position:relative;
+    text-align: center;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width:750px){
+  .about3 { 
+    padding: 0px 90px 40px 90px;
+    background-size: 600%;
+  }
+  .article3 p{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:450px){
+  .about3 { 
+    padding: 0px 60px 40px 60px;
+  }
+  .article3 p{
+    font-size: 15px;
+  }
+  .header-holder3 {
+    width: 80%;
+    left: 5%;
+  }
+}
+/*----------------------------------------------------------------------------------------*/
+.about4 {
+  width:100%;
+  padding: 0px 250px 40px 250px;
+  background-color:rgb(255, 255, 255);
+  text-align: left;
+  background-image: url("../images/Overfishing_page/article_background_green.png");
+  background-size: 250%;
+  background-position:bottom;
+  display: block;
+  border: #000000 0.1px solid;
+}
+.header-holder4 {
+  width: 40%;
+  margin-top: 30px;
+  position:relative;
+  text-align: center;
+  left: 30%;
+}
+
+.article4 p{
+  position: relative;
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  font-size: 19px;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+.article4 {
+  position: relative;
+  height:auto;
+  width: auto;
+  color:black;
+  text-align: left;
+}
+
+.article4 h1 {
+  position: relative;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  text-decoration: none;
+  border-bottom:#00b218 solid 4px;
+}
+
+.article4 img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:990px){
+  .about4 { 
+    padding: 0px 150px 40px 150px;
+  }
+  .header-holder4 {
+    width: 60%;
+    margin-top: 40px;
+    position:relative;
+    text-align: center;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width:750px){
+  .about4 { 
+    padding: 0px 90px 40px 90px;
+    background-size: 500%;
+  }
+  .article4 p{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:450px){
+  .about4 { 
+    padding: 0px 60px 40px 60px;
+  }
+  .article4 p{
+    font-size: 15px;
+  }
+  .header-holder4 {
+    width: 80%;
+    left: 5%;
+  }
+}

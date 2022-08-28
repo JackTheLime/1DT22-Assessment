@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko&family=Play&family=Ropa+Sans&family=Scada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=News+Cycle&family=Open+Sans&display=swap&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
-font-family: 'Play', sans-serif;
-font-family: 'Ropa Sans', sans-serif;
-font-family: 'Scada', sans-serif;
-font-family: 'Amiko', sans-serif;
 
 
 
@@ -220,7 +216,7 @@ a.using {
 
   /* This is the hero image CSS code */
   .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Homepage/ocean_hero_image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Oil_Spills_Page/oil_spill_hero_image.jpg");
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -270,14 +266,12 @@ a.using {
   font-family: 'Poppins', sans-serif;
 }
 
-.hero-text p{
-  font-size: 20px;
-  font-weight: 100;
-}
-
 @media screen and (max-width: 600px) {
   .hero-image {
     height:60vh;
+  }
+  .hero-text h1{
+    font-size: 50px;
   }
 }
 
@@ -288,342 +282,423 @@ img .logo {
 
  /*------------------------------------------ START OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
 .about {
-  height:450px;
   width:100%;
-  padding: 0px;
+  padding: 0px 250px 40px 250px;
   color:black;
   text-align: left;
   background-image: url("../images/Homepage/idek.png");
   background-size: 300%;
-  background-position:center;
-  display: flex;
+  display: block;
+  border: #000000 0.1px solid;
+}
+.header-holder {
+  width: 40%;
+  margin-top: 30px;
+  position:relative;
+  text-align: center;
+  left: 30%;
 }
 
-.purpose1 {
+.article p{
   position: relative;
-  height:450px;
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  font-size: 19px;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+.article {
+  position: relative;
+  height:auto;
+  width: auto;
   color:black;
   text-align: left;
-  width: 50%;
-  padding: 40px;
 }
 
-.purpose2 {
-  position: relative;
-  height:450px;
-  color:black;
-  width: 50%;
-  padding: 40px;
-  z-index: 1001;
-}
-
-.purpose1 h1 {
+.article h1 {
   position: relative;
   font-family: 'BenchNine', sans-serif;
   font-weight: 700;
-  width: 35%;
+  width: 100%;
   text-decoration: none;
   border-bottom:#00a8db solid 4px;
 }
-.purpose2 h1 {
+
+.article img {
   position: relative;
-  padding: 20px;
-  font-weight: 700;
-  font-family: 'BenchNine', sans-serif;
-  font-size: 60px;
-  text-align: right;
+  height: 100%;
   width: 100%;
-  border-bottom:#00b6ee solid 2px;
+  border-radius: 20px;
 }
 
-.about p{
-  position: relative;
-  font-family: 'Play', sans-serif;
-  width: 80%;
-  font-size: 19px;
-  z-index: 2;
-}
-@media screen and (max-width:1350px){
-  .about p {
-    width:100%;
-    font-size: 18px;
+@media screen and (max-width:990px){
+  .about { 
+    padding: 0px 150px 40px 150px;
   }
-  .purpose2 h1{
-    font-size:50px;
-    z-index: 1000;
+  .header-holder {
+    width: 60%;
+    margin-top: 40px;
+    position:relative;
+    text-align: center;
+    left: 15%;
   }
 }
 
-@media screen and (max-width:1320px){
-  .purpose1 {
-    padding: 30px;
-    width: 100%;
-    height:400px;
+@media screen and (max-width:750px){
+  .about { 
+    padding: 0px 90px 40px 90px;
+    background-size: 500%;
   }
-  .purpose2 {
-    padding: 40px;
-    width: 100%;
-    height:400px;
-  }
-  .purpose2 h1{
-    font-size:38px;
-    z-index: 1000;
-  }
-  .about p {
-    width:100%;
-    font-size: 16.5px;
+  .article p{
+    font-size: 17px;
   }
 }
-
-@media screen and (max-width:855px){
-  .about{
-    display: block;
-    height:800px;
+@media screen and (max-width:450px){
+  .about { 
+    padding: 0px 60px 40px 60px;
   }
-  .purpose1 {
-    padding: 20px;
-    width: 100%;
-  }
-  .purpose2 {
-    padding: 20px;
-    width: 100%;
-  }
-  .purpose1 h1{
-    font-size:32px;
-    width:70%;
-    z-index: 1000;
-  }
-  .purpose2 h1{
-    font-size:40px;
-    z-index: 1000;
-  }
-  .about p {
-    width:100%;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width:470px){
-  .about{
-    display: block;
-    height:800px;
-  }
-  .purpose1 {
-    padding: 20px;
-    width: 100%;
-  }
-  .purpose2 {
-    padding: 30px;
-    width: 100%;
-  }
-  .purpose1 h1{
-    font-size:28px;
-    width:70%;
-    font-weight: 700;
-  }
-  .purpose2 h1{
-    font-size:30px;
-    font-weight: 700;
-  }
-  .about p {
-    width:100%;
+  .article p{
     font-size: 15px;
   }
-}
-/*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
-/*------------------------------------------ START OF "CAROUSEL" CSS --------------------------------------------*/
-.carousel .carousel-item {
-  height: 650px;
-}
-.carousel-item {
-  background: #000000;
-}
-.carousel-item img {
-    position: absolute;
-    object-fit:cover;
-    opacity: 50%;
-    top: 0;
-    left: 0;
-    min-height: 700px;
-} 
-.carousel-caption {
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-}
-.carousel-caption h1{
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-  font-weight: 700;
-  text-decoration: none;
-}
-.carousel-caption a{
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-  color: white;
-}
-.carousel-caption a:hover{
-  font-size: 50px;
-  font-family: 'BenchNine', sans-serif;
-  padding: 0px;
-  color: rgb(0, 158, 206);
-}
-.carousel-caption p{
-  font-family: 'Play', sans-serif;
-  font-size: 20px;
-  padding: 0px;
+  .header-holder {
+    width: 80%;
+    left: 5%;
+  }
 }
 
-@media screen and (max-width:855px){
-  .carousel-caption h1{
-    font-size: 40px;
-  }
-  .carousel-caption p{
-    font-family: 'Play', sans-serif;
-    font-size: 16px;
-  }
-}
-/*------------------------------------------ END OF "CAROUSEL" CSS --------------------------------------------*/
-.information1 {
-  height:780px;
+/*------------------------------------------ END OF "WHAT THIS ABOUT" CSS --------------------------------------------*/
+/*------------------------------------------ START OF "CAROUSEL" CSS --------------------------------------------*/
+.about2 {
+  position: relative;
   width:100%;
-  padding: 20px;
+  padding: 30px;
+  height: 400px;
+  color:black;
+  text-align: center;
+  background-color: #004656;
+  background-position: left;
+  background-size: 230%;
+  background-image: url("../images/Overfishing_page/article_background_2.png");
+  display: block;
+  border: #000000 0.1px solid;
+  z-index: 5;
+}
+
+.header-holder2 {
+  width: 50%;
+  margin-top: 30px;
+  position:relative;
+  left: 25%;
+  display: flex;
+}
+
+.about2 h1 {
+  position: relative;
+  color: #ffffff;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  text-decoration: none;
+  border-bottom:#00a8db solid 4px;
+  margin-top: -20px;
+}
+
+.article2 {
+  position: relative;
+  height:auto;
+  width: 100%;
   color:black;
   text-align: left;
-  background-image: url("../images/Homepage/idek.png");
-  background-size: 300%;
-  background-position:left;
-  display: flex;
+  display:flex;
+  margin-top: 20px;
   justify-content: space-evenly;
 }
-.news-header h1{
-    position: relative;
-    height: 50px;
-    font-family: 'BenchNine', sans-serif;
-    font-weight: 700;
+
+.article2 p{
+  font-family: 'Play', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+}
+
+.article2 p:hover{
+  color: #00a8db;
+  text-decoration-color: #00a8db;
+}
+
+.polaroid-responsive-box {
+  width: 50%;
+  height: auto;
+  justify-content: space-around;
+  display: flex;
+}
+
+.polaroid img{
+  height: 150px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px
+}
+
+.polaroid {
+  background-color: rgb(227, 227, 227);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border: #000000 4px solid;
+  border-radius: 20px 20px 20px 20px;
+  max-width: 230px;
+}
+
+.polaroidcontainer {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: -20px -20px 0px 0px;
+}
+
+@media screen and (max-width:1000px){
+  .polaroid { 
+    margin: 2%;
+    max-width: 180px;
+  }
+  .article2 {
+    height:auto;
+  }
+  .about2 h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .polaroid-responsive-box {
     width: 100%;
-    text-decoration: none;
-    border-bottom:#00a8db solid 4px;
+    display:flex;
+    justify-content: space-evenly;
   }
-  .news-header {
-    width: 30%;
-    height: 70px;
-    margin-top: 30px;
-    font-family: 'BenchNine', sans-serif;
-    position: absolute;
-    text-align: center;
+  .article2 {
+    height:auto;
+    display:inline-block;
   }
-  .article {
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 300px;
-    position: relative;
-    top: 100px;
-    max-height: 600px;
-    border: black 2px solid;
+  .article2 p {
+    font-size: 15px;
   }
-  .article-header img {
+  .about2 {
+    height:auto;
+    display:inline-block;
+  }
+  .polaroid {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    max-width: 220px;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
   }
-  .article-body {
-    display: flex;
-    flex-direction: column;
+  .header-holder2 {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width:390px){
+
+  .polaroid-responsive-box {
+    width: 100%;
+    display:block;
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: 250px;
+    padding: px;
   }
-  .article-body h4{
-   padding: 10px 0px 0px 0px;
-   font-size: 20px;
+  .about2 h1 {
+    font-size: 30px;
+    width: 100%;
   }
-  .article-body p{
-    padding: 10px 0px 0px 0px;
+  .polaroid {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    max-width: 15000px;
+    width: 100%;
   }
-  
-  .tag {
-    background: #cccccc;
-    border-radius: 50px;
-    font-size: 12px;
-    margin: 0;
-    color: #fff;
-    padding: 2px 10px;
-    text-transform: uppercase;
+  .polaroidcontainer {
+    width: 100%;
   }
-  .tag-red {
-    background-color: #b60000;
+  .polaroid img {
+    height: 200px;
   }
-  .tag-purple {
-    background-color: #7a00cc;
+}
+
+/*----------------------------------------------------------------------------------------*/
+.about3 {
+  width:100%;
+  padding: 0px 250px 40px 250px;
+  background-color:rgb(21, 0, 0);
+  text-align: left;
+  background-image: url("../images/Overfishing_page/article_background_5.png");
+  background-size: 250%;
+  background-position:left;
+  display: block;
+  border: #000000 0.1px solid;
+}
+.header-holder3 {
+  width: 40%;
+  margin-top: 30px;
+  position:relative;
+  text-align: center;
+  left: 30%;
+}
+
+.article3 p{
+  position: relative;
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  font-size: 19px;
+  z-index: 2;
+  margin-top: 30px;
+  color: #ffffff;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.article3 {
+  position: relative;
+  height:auto;
+  width: auto;
+  color:black;
+  text-align: left;
+}
+
+.article3 h1 {
+  position: relative;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom:#c50000 solid 4px;
+}
+
+.article3 img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:990px){
+  .about3 { 
+    padding: 0px 150px 40px 150px;
   }
-  .tag-pink {
-    background-color: #cd5b9f;
+  .header-holder3 {
+    width: 60%;
+    margin-top: 40px;
+    position:relative;
+    text-align: center;
+    left: 15%;
   }
-  .tag-blue {
-    background-color: #0059ff;
+}
+
+@media screen and (max-width:750px){
+  .about3 { 
+    padding: 0px 90px 40px 90px;
+    background-size: 600%;
   }
-  
-  .article-body p {
-    font-size: 13px;
-    margin: 0 0 40px;
+  .article3 p{
+    font-size: 17px;
   }
-  .author{
-    display: flex;
-    margin-top: auto;
+}
+@media screen and (max-width:450px){
+  .about3 { 
+    padding: 0px 60px 40px 60px;
   }
-  
-  .author img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+  .article3 p{
+    font-size: 15px;
   }
-  .author-info h5 {
-    margin: 0;
+  .header-holder3 {
+    width: 80%;
+    left: 5%;
   }
-  .author-info h6 {
-    margin: 0;
-    font-size: 14px;
-    color: black;
-    padding: 10px 0px 0px 0px;
+}
+/*----------------------------------------------------------------------------------------*/
+.about4 {
+  width:100%;
+  padding: 0px 250px 40px 250px;
+  background-color:rgb(255, 255, 255);
+  text-align: left;
+  background-image: url("../images/Overfishing_page/article_background_green.png");
+  background-size: 250%;
+  background-position:bottom;
+  display: block;
+  border: #000000 0.1px solid;
+}
+.header-holder4 {
+  width: 40%;
+  margin-top: 30px;
+  position:relative;
+  text-align: center;
+  left: 30%;
+}
+
+.article4 p{
+  position: relative;
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  font-size: 19px;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+.article4 {
+  position: relative;
+  height:auto;
+  width: auto;
+  color:black;
+  text-align: left;
+}
+
+.article4 h1 {
+  position: relative;
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  text-decoration: none;
+  border-bottom:#00b218 solid 4px;
+}
+
+.article4 img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:990px){
+  .about4 { 
+    padding: 0px 150px 40px 150px;
   }
-  .author-info h6:hover {
-    margin: 0;
-    font-size: 14px;
-    color: rgb(0, 67, 211);
-    padding: 10px 0px 0px 0px;
+  .header-holder4 {
+    width: 60%;
+    margin-top: 40px;
+    position:relative;
+    text-align: center;
+    left: 15%;
   }
-  .author-info i {
-    margin: 0;
-    font-size: 16px;
+}
+
+@media screen and (max-width:750px){
+  .about4 { 
+    padding: 0px 90px 40px 90px;
+    background-size: 500%;
   }
-  .author-info small {
-    color: #545d7a;
+  .article4 p{
+    font-size: 17px;
   }
-  
-  @media screen and (max-width: 1000px) {
-    .information1 {
-      height:2100px;
-      width:100%;
-      padding:20px;
-      display: block;
-      justify-content:space-evenly;
-    }
-    .article {
-      width: 100%;
-      margin: 0;
-      margin-top: 20px;
-    }
-    .news-header {
-      width: 95.5%;
+}
+@media screen and (max-width:450px){
+  .about4 { 
+    padding: 0px 60px 40px 60px;
   }
-section i{
-height: 20px;
+  .article4 p{
+    font-size: 15px;
+  }
+  .header-holder4 {
+    width: 80%;
+    left: 5%;
+  }
 }

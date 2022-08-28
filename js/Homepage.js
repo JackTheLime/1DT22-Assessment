@@ -9,3 +9,4 @@ function myFunction() {
 $('.carousel').carousel({
   interval: 2
 })
+
